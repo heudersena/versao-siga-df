@@ -11,7 +11,7 @@
     "sqlite3": "^5.0.0"
   },
   "scripts": {
-    "start" : "node index.js"
+    "start" : "node index.js",
     "m": "npx knex migrate:latest",
     "r": "knex migrate:rollback --all"
   }
