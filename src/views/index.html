@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+    <h1>Lista das versões do siga</h1>
+    <a href="/new" class="btn btn-sm btn-link">Novo resgistro</a>
+    <table class="table table-sm table-bordered">
+
+        <thead>
+            <tr>
+                <th>maquina</th>
+                <th>setor</th>
+                <th>ip</th>
+                <th>versaosiga</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td> <a href="/editar/{{ item.id_usuario }}">{{ item.maquina }}</a> </td>
+                <td>{{ item.setor }}</td>
+                <td>{{ item.ip }}</td>
+                <td>{{ item.versaosiga }}</td>
+            </tr>
+            {% else %}
+            <tr> <th>Sem registros</th> </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+</div>
+    
+</body>
+</html>

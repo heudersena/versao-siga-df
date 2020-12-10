@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section section-primary">
+            <h1>Criar um novo Registro</h1>
+            <a href="/" class="btn btn-sm btn-link">lista de resgistro</a>
+            <form action="/new" method="post">
+                <div class="form-group">
+                    <label for="maquina">Computador do colaborador</label>
+                    <input class="form-control" type="text" name="maquina" required>
+                </div>
+                <div class="form-group">
+                    <label for="setor">Setor</label>
+                    <input class="form-control" type="text" name="setor" required>
+                </div>
+                <div class="form-group">
+                    <label for="ip">Ip</label>
+                    <input class="form-control" type="text" name="ip" required>
+                </div>
+                <div class="form-group">
+                    <label for="versaosiga">Versão do SIGA</label>
+                    <input class="form-control" type="text" name="versaosiga" required>
+                </div>
+                <div class="form-group">
+                   <button type="submit" class="btn btn-sm btn-primary">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="section section-secundary"></div>
+
+    </div> 
+    
+</body>
+</html>
