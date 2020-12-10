@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const routes = require("./routes");
 
-app.use(routes);
+app.use(routes); 
 
-app.listen(PORT, HOST, () => {
+app.listen( process.env.PORT || PORT, HOST, () => {
   console.log(`http://${HOST}:${PORT}`);
 });
